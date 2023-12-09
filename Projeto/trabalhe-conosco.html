@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="trabalhe-conosco.css" />
+    <title>HorizonGamesStudios</title>
+  </head>
+  <header>
+    <a href="/index.html"
+      ><img
+        src="/assets/HGS/Logo-HGS.png"
+        alt="Logo da empresa HorizonGamesStudios"
+    /></a>
+  </header>
+  <body>
+    <main>
+      <form id="Form-trabalhe-conosco">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div id="input-wrapper">
+            <label for="dados-name"> Nome Completo <span>(mínimo 8 caracteres)</span></label>
+            <input type="text" id="dados-name" required minlength="8"/>
+          </div>
+          <div id="input-wrapper">
+            <label for="dados-email"> E-mail para contato </label>
+            <input type="email" id="dados-email" required />
+          </div>
+          <div id="input-wrapper">
+            <label for="dados-whatsapp"> Whatsapp </label>
+            <input type="number" id="dados-whatsapp" required />
+          </div>
+          <div id="input-wrapper">
+            <label for="dados-infos"> Fale sobre você  <span>(máximo 600 caracteres)</span></label>
+            <textarea id="dados-infos" cols="30" rows="10" maxlength="600"></textarea>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <input type="submit" form="Form-trabalhe-conosco" value="Enviar" />
+    </footer>
+  </body>
+</html>
